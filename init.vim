@@ -59,8 +59,7 @@ set termguicolors
 set background=dark
 set updatetime=50
 set cursorline
-set clipboard=unnamedplus " Copy to system clipboard
-
+set clipboard=unnamedplus " Copy to system clipboard -> you need xsel installed
 let mapleader = " "
 
 nnoremap <leader>h :wincmd h<CR>
@@ -155,7 +154,7 @@ if executable('rg')
   let g:rg_derive_root='true'
 endif
 
-nnoremap <Leader>s :Rg<SPACE>
+nnoremap <Leader>s :Rg --ignore-case<SPACE>
 " --------------- RIP GREP END ------------------------------
  
 " --------------- Vim Smoothe Scroll BEGIN ------------------
